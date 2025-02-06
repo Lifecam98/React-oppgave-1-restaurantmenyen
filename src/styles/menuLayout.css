@@ -18,7 +18,6 @@ ul > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px;
     padding: 15px;
     box-sizing: border-box;
 }

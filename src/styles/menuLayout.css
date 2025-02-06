@@ -21,3 +21,13 @@ ul > div {
     padding: 15px;
     box-sizing: border-box;
 }
+
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+
+button:hover {
+    transform: scale(1.15);
+    cursor: pointer
+}

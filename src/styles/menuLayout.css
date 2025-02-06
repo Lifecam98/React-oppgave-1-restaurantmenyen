@@ -9,12 +9,16 @@
 
 ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 10px;
 }
 
-/* #frame {
-    background-color: rgb(3, 76, 141);
-    border-radius: 30px;
-} */
+ul > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    padding: 15px;
+    box-sizing: border-box;
+}

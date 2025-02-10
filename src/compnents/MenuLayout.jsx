@@ -11,7 +11,7 @@ const MenuLayout = ({
 }) => {
 	return (
 		<>
-			<h1 className="text-5xl text-blue-600 font-extrabold">Lars' skikkelig digge meny</h1>
+			<h1 className="text-5xl text-blue-600 font-extrabold">Lars' skikkelig digge restaurantmeny</h1>
 			<div className="my-4">
 				<div className="mb-2">
 					<span className="text-blue-200">Sorter type rett:</span>

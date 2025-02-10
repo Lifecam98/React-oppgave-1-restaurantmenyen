@@ -19,7 +19,6 @@ function App() {
 			return 0;
 		});
 
-
 	return (
 		<>
 			<MenuLayout

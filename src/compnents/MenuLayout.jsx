@@ -11,10 +11,13 @@ const MenuLayout = ({
 }) => {
 	return (
 		<>
-			<h1 className="text-5xl text-blue-600 font-extrabold">Lars' skikkelig digge restaurantmeny</h1>
+			<h1 className="text-5xl text-blue-600 font-extrabold">
+				Lars' skikkelig digge restaurantmeny</h1>
 			<div className="my-4">
 				<div className="mb-2">
-					<span className="text-blue-200">Sorter type rett:</span>
+					<span className="text-blue-200">
+						Sorter type rett:
+					</span>
 				</div>
 				{categories.map((category) => (
 					<button
@@ -23,8 +26,7 @@ const MenuLayout = ({
 						className={`mx-2 px-4 py-2 rounded-lg ${
 							selectedCategory === category
 								? "bg-blue-600 text-blue-200"
-								: "bg-blue-200 text-blue-800"
-						}`}
+								: "bg-blue-200 text-blue-800"}`}
 					>
 						{category}
 					</button>
@@ -39,18 +41,23 @@ const MenuLayout = ({
                     className={`mx-2 px-4 py-2 rounded-lg ${
                         priceSort === "none"
                             ? "bg-blue-600 text-blue-200"
-                            : "bg-blue-200 text-blue-800"
-                    }`}
+                            : "bg-blue-200 text-blue-800"}`}
                 >
                     Ingen sortering
                 </button>
 				<button onClick={() => onPriceSortChange("ascending")}
-					className={`mx-2 px-4 py-2 rounded-lg ${priceSort === "ascending" ? "bg-blue-600 text-blue-200" : "bg-blue-200 text-blue-800"}`}
+					className={`mx-2 px-4 py-2 rounded-lg ${
+						priceSort === "ascending" 
+						? "bg-blue-600 text-blue-200" 
+						: "bg-blue-200 text-blue-800"}`}
 				>
 					Stigende
 				</button>
 				<button onClick={() => onPriceSortChange("descending")}
-					className={`mx-2 px-4 py-2 rounded-lg ${priceSort === "descending" ? "bg-blue-600 text-blue-200" : "bg-blue-200 text-blue-800"}`}
+					className={`mx-2 px-4 py-2 rounded-lg ${
+						priceSort === "descending" 
+						? "bg-blue-600 text-blue-200" 
+						: "bg-blue-200 text-blue-800"}`}
 				>
 					Synkende
 				</button>
